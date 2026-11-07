@@ -1,0 +1,11 @@
+{
+  "total": 30,
+  "tested": 30,
+  "success": 30,
+  "correct": 28,
+  "class_accuracy_pct": 93.3,
+  "success_rate_pct": 100.0,
+  "avg_case_seconds": 12.29,
+  "retrieval_top3_rate": null,
+  "quality_score": null
+}
