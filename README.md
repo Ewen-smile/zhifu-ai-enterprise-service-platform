@@ -23,15 +23,55 @@
 
 ## 产品界面
 
-| 员工首页 | AI 智能问答 |
-| :---: | :---: |
-| ![员工首页](assets/screenshots/01-home.png) | ![AI 智能问答](assets/screenshots/02-chat.png) |
+### 员工端
 
-| IT 工单工作台 | 知识库管理 |
-| :---: | :---: |
-| ![IT 工单工作台](assets/screenshots/07-workbench.png) | ![知识库管理](assets/screenshots/08-knowledge.png) |
+<table>
+  <tr>
+    <td align="center"><b>员工首页</b></td>
+    <td align="center"><b>AI 智能问答</b></td>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/01-home.png" width="100%"></td>
+    <td><img src="assets/screenshots/02-chat.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>我的工单</b></td>
+    <td align="center"><b>提交工单</b></td>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/03-tickets.png" width="100%"></td>
+    <td><img src="assets/screenshots/04-ticket-new.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>自助知识中心</b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/05-help.png" width="100%"></td>
+    <td></td>
+  </tr>
+</table>
 
-其余页面截图见 [`assets/screenshots/`](assets/screenshots/)。截图使用虚构演示数据。
+### IT 管理端
+
+<table>
+  <tr>
+    <td align="center"><b>管理总览</b></td>
+    <td align="center"><b>工单工作台</b></td>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/06-dashboard.png" width="100%"></td>
+    <td><img src="assets/screenshots/07-workbench.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>知识库管理</b></td>
+    <td align="center"><b>新增知识条目</b></td>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/08-knowledge.png" width="100%"></td>
+    <td><img src="assets/screenshots/09-knowledge-new.png" width="100%"></td>
+  </tr>
+</table>
 
 ## 技术方案
 
@@ -49,10 +89,8 @@
 需要 Python 3.9+，在项目根目录执行：
 
 ```bash
-python3 app.py
+python app.py
 ```
-
-浏览器访问：**http://127.0.0.1:8765**
 
 如需连接 Dify，请自行创建 Chatflow 并配置模型与知识库，再通过环境变量设置 `DIFY_API_KEY` 等参数；配置项参见 [`.env.example`](.env.example)。仓库不包含真实 API Key 或云端 Dify 工作流。
 
